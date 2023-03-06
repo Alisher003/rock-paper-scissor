@@ -99,7 +99,6 @@ img {
   top: 262px;
   align-items: center;
   flex-direction: row;
-  border: 1px solid #fff;
   justify-content: space-between;
 }
 
@@ -238,7 +237,6 @@ img {
  @media screen and (min-width: 420px) {
     .navbar {
       max-width: 100%;
-      margin-left: auto;
 
     }
 
