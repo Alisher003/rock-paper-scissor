@@ -7,13 +7,13 @@ let elPaperBtn = document.querySelector(".paper");
 let elScissorsBtn = document.querySelector(".scissors");
 let elRockBtn = document.querySelector(".rock");
 let elPlayBtn = document.querySelector(".play-btn");
+let elRules = document.querySelector(".rules");
+let elRulesBtn = document.querySelector(".rulesbtn")
 let elGameResult = document.querySelector(".game-result");
 let elScore = document.querySelector(".navbar-btn__desc");
 var userValue = '';
 
-
-
-
+elRules
 
 //Add class 
 elPlayBtn.style.display = "none"
@@ -80,37 +80,27 @@ function getComputerChoice() {
 
   function winner(getcomputerChoice) {
     if (userValue == choices[randomIndex]) {
-      console.log("drow");
       elGameResult.textContent = "Drow";
     } else if (userValue == 'paper' && choices[randomIndex] == 'scissors') {
-      console.log("lose");
-      elGameResult.textContent = "Lose";
+      elGameResult.textContent = "You Lose";
       elScore.textContent = score -= 1;
     } else if (userValue == 'paper' && choices[randomIndex] == 'rock') {
-      console.log("win");
-      elGameResult.textContent = "Win";
-      elScore.textContent = score += 1;
+      elGameResult.textContent = "You Win";
+      elScore.textContent = score += 3;
     } else if (userValue == 'scissors' && choices[randomIndex] == 'paper') {
-      console.log("win");
-      elGameResult.textContent = "Win";
-      elScore.textContent = score += 1;
+      elGameResult.textContent = "You Win";
+      elScore.textContent = score += 3;
     } else if (userValue == 'scissors' && choices[randomIndex] == 'rock') {
-      console.log("lose");
-      elGameResult.textContent = "Lose";
+      elGameResult.textContent = "You Lose";
       elScore.textContent = score -= 1;
     } else if (userValue == 'rock' && choices[randomIndex] == 'paper') {
-      console.log("lose");
-      elGameResult.textContent = "Lose";
+      elGameResult.textContent = "You Lose";
       elScore.textContent = score -= 1;
     } else if (userValue == 'rock' && choices[randomIndex] == 'scissors') {
-      console.log("win");
-      elGameResult.textContent = "Win";
-      elScore.textContent = score += 1;
+      elGameResult.textContent = "You Win";
+      elScore.textContent = score += 3;
     }
   }
-
-
-  
 
 
 
