@@ -273,13 +273,24 @@ img {
 
 
 
- @media screen and (min-width: 420px) {
+ @media only screen and (max-width: 420px) {
     .navbar {
       max-width: 100%;
+    }
 
+    .navbar-desc {
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 16px;
     }
 
     .box-btns {
       max-width: 100%;
     }
+
+    .box-btns-top {
+      display: flex;
+      flex-direction: column;
+    }
+
 } 
