@@ -6,14 +6,26 @@ let elBox = document.querySelector(".box-btns");
 let elPaperBtn = document.querySelector(".paper");
 let elScissorsBtn = document.querySelector(".scissors");
 let elRockBtn = document.querySelector(".rock");
+let elBoxHeading = document.querySelector(".box-btns-nav");
 let elPlayBtn = document.querySelector(".play-btn");
 let elRules = document.querySelector(".rules");
-let elRulesBtn = document.querySelector(".rulesbtn")
+let elRulesBtn = document.querySelector(".rulesbtn");
+let elCloseBtn = document.querySelector(".close-modal");
 let elGameResult = document.querySelector(".game-result");
 let elScore = document.querySelector(".navbar-btn__desc");
 var userValue = '';
+elRules.style.display = "none";
 
-elRules
+console.log(elCloseBtn);
+elBoxHeading.style.display = "none"
+
+elRulesBtn.addEventListener("click", function(){
+    elRules.style.display = "inline";
+})
+
+elCloseBtn.addEventListener("click" , function() {
+  elRules.style.display = "none";
+})
 
 //Add class 
 elPlayBtn.style.display = "none"
@@ -47,7 +59,7 @@ function getComputerChoice() {
 // UserChoise
   elPaperBtn.addEventListener("click",  function(){
     elPlayBtn.style.display = "block";
-    elPlayBtn.classList.add("btn-fixed")
+    elBoxHeading.style.display = "block"
     userValue = document.getElementById('paper').value
     getComputerChoice();
     elScissorsBtn.style.display = "none";
@@ -57,7 +69,7 @@ function getComputerChoice() {
   
   elScissorsBtn.addEventListener("click", function(){
     elPlayBtn.style.display = "block";
-    elPlayBtn.classList.add("btn-fixed")
+    elBoxHeading.style.display = "block"
     userValue = document.getElementById('scissors').value
     getComputerChoice();
     elPaperBtn.style.display = "none";
@@ -67,7 +79,7 @@ function getComputerChoice() {
   
   elRockBtn.addEventListener("click", function(){
     elPlayBtn.style.display = "block";
-    elPlayBtn.classList.add("btn-fixed")
+    elBoxHeading.style.display = "inlne"
     elRockBtn.classList.add("rock-fixed")
     getComputerChoice();
     elPaperBtn.style.display = "none";
@@ -112,4 +124,5 @@ function getComputerChoice() {
     elScissorsBtn.style.display = "inline-block";
     elRockBtn.style.display = "inline-block";
     elPaperBtn.style.display = "inline-block";
+    elBoxHeading.style.display = "none";
   })
