@@ -35,8 +35,6 @@ let score = 0;
 elScore.textContent = score;
 
 
-
-
 // Computer choice function+++
 function getComputerChoice() {
   randomIndex = Math.floor(Math.random() * 3);
@@ -52,9 +50,6 @@ function getComputerChoice() {
   } 
   return choices[randomIndex];
 } 
-
-
-
 
 // UserChoise
   elPaperBtn.addEventListener("click",  function(){
@@ -89,7 +84,6 @@ function getComputerChoice() {
     })
 
 
-
   function winner(getcomputerChoice) {
     if (userValue == choices[randomIndex]) {
       elGameResult.textContent = "Drow";
@@ -113,8 +107,6 @@ function getComputerChoice() {
       elScore.textContent = score += 3;
     }
   }
-
-
 
   // restart game
   elPlayBtn.addEventListener("click", function(){
