@@ -92,10 +92,10 @@ function getComputerChoice() {
       elScore.textContent = score -= 1;
     } else if (userValue == 'paper' && choices[randomIndex] == 'rock') {
       elGameResult.textContent = "You Win";
-      elScore.textContent = score += 3;
+      elScore.textContent = score += 1;
     } else if (userValue == 'scissors' && choices[randomIndex] == 'paper') {
       elGameResult.textContent = "You Win";
-      elScore.textContent = score += 3;
+      elScore.textContent = score += 1;
     } else if (userValue == 'scissors' && choices[randomIndex] == 'rock') {
       elGameResult.textContent = "You Lose";
       elScore.textContent = score -= 1;
@@ -104,7 +104,7 @@ function getComputerChoice() {
       elScore.textContent = score -= 1;
     } else if (userValue == 'rock' && choices[randomIndex] == 'scissors') {
       elGameResult.textContent = "You Win";
-      elScore.textContent = score += 3;
+      elScore.textContent = score += 1;
     }
   }
 

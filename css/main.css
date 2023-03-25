@@ -46,9 +46,15 @@ img {
   border-radius: 15px;
 }
 
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
 .navbar__desc {
-  max-width: 159px;
-  height: 96px;
+  width: 159px;
+  /* height: 96px; */
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 700;
@@ -61,7 +67,6 @@ img {
 .navbar-btn {
   max-width: 150px;
   padding: 15px 24px;
-  height: 114px;
   background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
   border-radius: 8px;
@@ -89,31 +94,19 @@ img {
   color: #565468;
 }
 
-/* .box-btns {
-  display: flex;
-  flex-wrap: wrap;
-  width: 480px;
-  margin-left: 450px;
-  margin-top: 100px;
-  justify-content: space-around;
-} */
 
-/* .box-btns-nav {
-  display: flex;
-  align-items: center;
-  width: 580px;
-  height: 100px;
-  justify-content: space-between;
-} */
 
 .box-btns-top  {
+  max-width: 476px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin: 20px auto;
   justify-content: space-between;
-  width: 476px;
-  /* justify-content: space-around; */
+  margin: 60px auto;
+  align-self: center;
+}
+
+.box-btns-main {
+  margin: 0px auto;
 }
 
 .box-btn__link {
@@ -132,7 +125,7 @@ img {
 
 .choiseRock {
   margin-left: 700px;
-  margin-top: -610px;
+  margin-top: -650px;
 }
 
 
@@ -179,7 +172,7 @@ img {
   font-size: 16px;
   line-height: 19px;
   margin-right: auto;
-  margin-left: 580px;
+  margin: 0 auto;
   border: 1px solid transparent;
   border-radius: 20px;
   transition: all ease 0.3;
@@ -264,12 +257,6 @@ img {
 .close-modal:active {
   opacity: 0.4;
 }
-
-.rock {
-  margin-left: 120px;
-}
-
-
 
 
 

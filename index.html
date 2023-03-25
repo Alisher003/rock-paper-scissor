@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- HEADER SECTION-->
-    <header>
+    <header class="container">
         <nav class="navbar">
 
           <h1 class="navbar__desc">
@@ -32,7 +32,7 @@
     </header>
 
     <!-- MAIN SECTION -->
-    <main>
+    <main class="container">
         <div class="box-btns">
 
           <div class="box-btns-nav">  
@@ -40,23 +40,23 @@
             <!-- <h1 class="result-computer">THE HOUSE PICKED</h1> -->
           </div>
 
-          <!-- paper -->
           <div class="box-btns-top ">
 
             <button id="paper" class="box-btn__link paper" value="paper">
               <img class="paper-img" src="./img/paper.png" alt="">
             </button>
-           
+            
             <button id="scissors" class="box-btn__link scissors" value="scissors">
               <img class="box-btn__img" src="./img/scissors.png" alt="">
             </button>
-
-            <button id="rock" class="box-btn__link rock" href="#" value="rock">
-              <img class="box-btn__img" src="./img/rock.png" alt="">
-            </button>
             
+            <div class="box-btns-main ">
+              <button id="rock" class="box-btn__link rock" href="#" value="rock">
+                <img class="box-btn__img" src="./img/rock.png" alt="">
+              </button>
+            </div>
           </div>
-          <!-- rock -->
+            
           
           <div>
             <h1 class="game-result"></h1>
@@ -64,12 +64,12 @@
           </div>
         </div>
 
-        <div class="rules-top">
+        <div class="rules-top container">
 
           <button class="rulesbtn">RULES</button>
         </div>
         
-        <div class="rules">
+        <div class="rules container">
           <div class="rules-box"> 
             <h1 class="rules-box__heading">RULES</h1>
             <button class="close-modal">&times;</button>
